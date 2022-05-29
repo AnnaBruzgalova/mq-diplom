@@ -927,7 +927,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*display: none;*/
+  display: none;
 }
 
 .b-popup_hidden .b-popup-content {
@@ -1077,15 +1077,26 @@ footer {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+  .content {
+    padding: 0 35px;
+  }
+
   .page-next {
     margin-top: 50px;
   }
 
-  .aside {
-    width: 299px;
+  .page {
+    width: 100%;
+    padding: 0 0;
   }
 
-  .page {
+  .post-list {
+    margin-right: 0px;
+    width: 390px;
+    margin-right: 35px;
+  }
+
+  .text {
     width: 100%;
   }
 
@@ -1100,6 +1111,11 @@ footer {
 
   .post_block {
     flex-direction: column;
+
+  }
+
+  .card-container:nth-child(n+3) {
+    margin-top: 60px;
   }
 }
 
